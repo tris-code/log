@@ -14,7 +14,9 @@ public enum Level: String {
 
 public struct Log {
     public static var disabled: Bool = false
-    public static var delegate: ((Level, String) -> Void) = { print("[\($0)] \($1)") }
+    public static var delegate: ((Level, String) -> Void) = {
+        print("[\($0)] \($1)")
+    }
 
     static func handle(event level: Level, message: String) {
         if !disabled {
@@ -22,8 +24,17 @@ public struct Log {
         }
     }
 
+    // suppress warning
+    static var isDebugBuild: Bool {
+        @inline(__always) get {
+            return _isDebugAssertConfiguration()
+        }
+    }
+
     public static func debug(_ message: String) {
-        handle(event: .debug, message: message)
+        if isDebugBuild {
+            handle(event: .debug, message: message)
+        }
     }
 
     public static func info(_ message: String) {
