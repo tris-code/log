@@ -8,18 +8,16 @@
  * See CONTRIBUTORS.txt for the list of the project authors
  */
 
-import XCTest
+import Test
 @testable import Log
 
-class LogTests: XCTestCase {
+class LogTests: TestCase {
     func testExample() {
 
     }
 
 
-    static var allTests : [(String, (LogTests) -> () throws -> Void)] {
-        return [
-            ("testExample", testExample),
-        ]
-    }
+    static var allTests = [
+        ("testExample", testExample),
+    ]
 }
