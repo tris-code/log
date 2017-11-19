@@ -13,4 +13,5 @@ import XCTest
 
 XCTMain([
      testCase(LogTests.allTests),
+     testCase(LogFileTests.allTests),
 ])
