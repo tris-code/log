@@ -18,16 +18,11 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/tris-foundation/file.git",
-            .branch("master")
-        ),
-        .package(
             url: "https://github.com/tris-foundation/test.git",
-            .branch("master")
-        )
+            .branch("master"))
     ],
     targets: [
-        .target(name: "Log", dependencies: ["File"]),
+        .target(name: "Log"),
         .testTarget(name: "LogTests", dependencies: ["Log", "Test"])
     ]
 )
