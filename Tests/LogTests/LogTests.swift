@@ -128,12 +128,4 @@ class LogTests: TestCase {
         Log.critical("log")
         assertEqual(global, "[critical] log")
     }
-
-
-    static var allTests = [
-        ("testLog", testLog),
-        ("testFormat", testFormat),
-        ("testEnabled", testEnabled),
-        ("testLevel", testLevel),
-    ]
 }
