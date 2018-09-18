@@ -3,7 +3,6 @@ import XCTest
 extension LogTests {
     static let __allTests = [
         ("testEnabled", testEnabled),
-        ("testFormat", testFormat),
         ("testLevel", testLevel),
         ("testLog", testLog),
     ]
