@@ -11,7 +11,6 @@
 
 import Test
 import Dispatch
-import Foundation
 @testable import Log
 
 class LogTests: TestCase {
