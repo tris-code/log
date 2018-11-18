@@ -10,7 +10,6 @@
  ******************************************************************************/
 
 import Test
-import Dispatch
 @testable import Log
 
 class LogTests: TestCase {
