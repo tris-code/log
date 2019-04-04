@@ -5,7 +5,7 @@ Simple log module.
 ## Package.swift
 
 ```swift
-.package(url: "https://github.com/tris-foundation/log.git", .branch("master"))
+.package(url: "https://github.com/tris-code/log.git", .branch("master"))
 ```
 
 ## Memo
