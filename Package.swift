@@ -7,9 +7,7 @@ let package = Package(
         .library(name: "Log", targets: ["Log"])
     ],
     dependencies: [
-        .package(
-            url: "https://github.com/tris-code/test.git",
-            .branch("master"))
+        .package(path: "../Test")
     ],
     targets: [
         .target(name: "Log"),
