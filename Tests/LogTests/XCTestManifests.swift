@@ -6,8 +6,6 @@ extension LogTests {
     //   `swift test --generate-linuxmain`
     // to regenerate.
     static let __allTests__LogTests = [
-        ("testEnabled", testEnabled),
-        ("testLevel", testLevel),
         ("testLog", testLog),
     ]
 }
