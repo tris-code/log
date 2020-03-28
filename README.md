@@ -32,10 +32,6 @@ struct Log {
 ## Usage
 
 ```swift
-// Option 0
-log(event: .warning, message: "message")
-
-// Option 1
 Log.info("message")
 
 // Overwrite delegate
